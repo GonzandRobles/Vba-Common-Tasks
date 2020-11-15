@@ -1,0 +1,5 @@
+Sub RemovFillColor()
+
+ActiveSheet.Cells.Interior.Color = xlNone
+
+End Sub
