@@ -1,0 +1,22 @@
+Sub ValueOverFiveHundred()
+    'declare variables
+    Dim ws As Worksheet
+    Dim ColorRng As Range
+    Dim ColorCell As Range
+
+    Set ws = ActiveSheet
+
+    Set ColorRng = ws.Range("B3:F20")
+
+    'highlight cells that contain a number greater than the one specified
+    For Each ColorCell In ColorRng
+
+    If ColorCell.Value > 500000 Then
+        ColorCell.Interior.Color = rgbLightBlue
+    Else
+        ColorCell.Interior.ColorIndex = xlNone
+    End If
+
+    Next
+
+End Sub
