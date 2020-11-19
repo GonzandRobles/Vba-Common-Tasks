@@ -1,0 +1,6 @@
+Sub Highlight_Headers()
+
+    'Highlights all the headers starting from A1 all the way to the last column to the right of A1
+    Range("A1", Range("A1").End(xlToRight)).Interior.Color = rgbLightBlue
+
+End Sub
