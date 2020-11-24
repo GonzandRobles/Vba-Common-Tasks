@@ -1,0 +1,11 @@
+Sub RandomNumber()
+
+    'This subroutine generates randon numbers from 100k to 400k in the selected cells
+    Dim rng As Range
+    Set rng = Selection
+
+    For Each cell In rng
+        cell.Value = WorksheetFunction.RandBetween(100000, 400000)
+    Next
+
+End Sub
