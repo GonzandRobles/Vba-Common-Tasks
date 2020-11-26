@@ -1,0 +1,22 @@
+Sub TimesNewRoman()
+
+    ' TimesNewRoman Macro
+    ActiveSheet.Cells.Font.Name = "Times New Roman"
+
+End Sub
+-----------------------------------------------------
+Sub Verdana()
+
+    ' Verdana Macro
+    ActiveSheet.Cells.Font.Name = "Verdana"
+
+End Sub
+-----------------------------------------------------
+Sub TimesSelectedCells()
+
+    'Changes the font to Times only on selected cells
+    'Use option + command+ s
+
+    Selection.Font.Name = "Times New Roman"
+
+End Sub
