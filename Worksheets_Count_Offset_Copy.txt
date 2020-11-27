@@ -1,0 +1,45 @@
+Public Sub PopPandL()
+
+    'Declare the variables
+    Dim x As Integer
+    Dim SheetTitle As String
+
+    'Select the first sheet all the way to the last sheet minus 1
+    For x = 1 To Worksheets.Count - 1
+
+        'Select the current sheet in the loop
+        Worksheets(x).Select
+        'Extract the name of current sheet in the loop
+        SheetTitle = ActiveSheet.Name
+        'Select the Worksheet named "P&L"
+        Worksheets("P&L").Select
+
+        'In the Worksheet P&L select cell A1
+        Range("A1").Select
+        'Move to the cell (1 * 5+ 2, 0) offset
+        Selection.Offset(x * 5 + 2, 0).Select
+        'Use the selection value from above (Worksheets(x).Select)
+        Selection.Value = SheetTitle
+        Selection.Font.Bold = True
+
+        'Return to select the current worksheet in the loop
+        Worksheets(x).Select
+        'Select Range A1 of current worksheet in the loop
+        Range("A1").Select
+        'Copy the currentregion of the Range A1 of current worksheet in the loop
+        Selection.CurrentRegion.Copy
+        'Select the P&L worksheet
+        Sheets("P&L").Select
+
+        'Offset one row down of the current selected cell
+        ActiveCell.Offset(1, 0).Select
+        'Paste the value of the current region from above
+        ActiveSheet.PasteSpecial
+
+    'Go to the next worksheet
+    Next x
+
+    'Delete rows from 3 to 6
+    Rows("3:6").Delete
+
+End Sub
