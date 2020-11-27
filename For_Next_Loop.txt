@@ -10,6 +10,7 @@ Public Sub ForNext()
     Next x
 
 End Sub
+--------------------------------------------------------------------------------------------
 
 Public Sub DoubleForNext()
 
@@ -26,6 +27,7 @@ Public Sub DoubleForNext()
     Next intCol
 
 End Sub
+--------------------------------------------------------------------------------------------
 
 Public Sub TripleForNext()
 
@@ -47,6 +49,9 @@ Public Sub TripleForNext()
     Next intSheet
 
 End Sub
+--------------------------------------------------------------------------------------------
+' For each iterates at a collection level, 
+' here it is iterating at a worksheet collection level
 
 Public Sub ExForEach()
 
@@ -60,6 +65,7 @@ Public Sub ExForEach()
 
 End Sub
 
+--------------------------------------------------------------------------------------------
 Public Sub ExitForExample()
 
     Dim x As Integer
