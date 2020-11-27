@@ -8,3 +8,4 @@ Common Tasks in VBA
 - Highlight_Values.txt = Highlight the cells that are above certain range
 - Random_Numbers_Generator.txt = Generates randon numbers from 100k to 400k in the selected cells
 - Remove_Color.txt = Clear Color of all highlighted cells
+- Worksheets_Count_Offset_Copy.txt = Contains a workbook that goes through different worksheets and copy the values of each worksheet and paste it in another one.
