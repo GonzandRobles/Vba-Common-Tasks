@@ -1,0 +1,67 @@
+Public Sub AllYourMacros()
+
+    ' Call to all your macros at once using the "Call" statement:
+    Call FindYourData
+    Call CopyPasteinYourA4
+    Call InsYourHeaders
+
+
+End Sub
+
+-----------------------------------------------------------------------------------
+
+Sub FindYourData()
+
+    'Declare a variable (String) to remember where the data starts
+    Dim DataStart As String
+    ' Start by selecting range A1
+    Range("a1").Select
+    ' Use the End statement, with xlDown to find the next cell down that has data
+    Selection.End(xlDown).Select
+    ' Store the active cell's address in your variable
+    DataStart = ActiveCell.Address
+    ' select the range that corresponds to your variable's stored address
+    Range(DataStart).Select
+
+End Sub
+
+-----------------------------------------------------------------------------------
+
+Sub CopyPasteinYourA4()
+
+    ' Select the current region of what it is on the selection object
+    Selection.CurrentRegion.Select
+    ' Cut that selection from above
+    Selection.Cut
+    ' Select Range("A4")
+    Range("A4").Select
+    ' Paste the above selection on the range a4
+    ActiveSheet.Paste
+
+End Sub
+
+-----------------------------------------------------------------------------------
+
+Sub InsYourHeaders()
+
+    Range("A1").Select
+    Selection.Value = "Our Global Company"
+    Selection.Font.Bold = True
+    Selection.Font.Size = 16
+
+
+    Range("A3").Value = "Symbol"
+    Range("B3").Value = "Open"
+    Range("C3").Value = "Close"
+    Range("D3").Value = "Net Change"
+    Range("A3:D3").Font.Bold = True
+    Range("A3:D3").Font.Size = 12
+
+    'Autofit the columns a through d
+    Columns("A:D").AutoFit
+
+End Sub
+
+
+
+
