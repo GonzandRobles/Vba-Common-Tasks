@@ -1,0 +1,13 @@
+Sub YesNoInput()
+
+    Dim input_received As Integer
+
+    input_received = MsgBox("Here goes the question... Click Yes or No", _
+        vbYesNo, "Here goes the title of the message box")
+
+    If input_received = vbYes Then
+        MsgBox "You clicked the yes button "
+    Else: MsgBox "You clicked the no button"
+    End If
+
+End Sub
