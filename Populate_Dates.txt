@@ -7,7 +7,7 @@ Public Sub DatesinThisMonth()
 
     MonthValue = Range("B5").Value
     YearValue = Range("C5").Value
-
+    
     For x = 1 To 30
         Range("D" & 4 + x).Value = _
             DateSerial(YearValue, MonthValue, x)
@@ -20,7 +20,10 @@ Public Sub FormatasLong()
 
     Dim x As Integer
     Dim DateValue As Date
-
+    
+    ' This one will output the long date format which
+    ' includes names of the week
+    ' -> Sunday, November 1, 2020
     For x = 1 To 30
         DateValue = Range("D" & 4 + x).Value
         Range("D" & 4 + x) = Format(DateValue, "Long Date")
