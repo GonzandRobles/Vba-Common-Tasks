@@ -12,10 +12,9 @@ Public Sub DatesinThisMonth()
         Range("D" & 4 + x).Value = _
             DateSerial(YearValue, MonthValue, x)
     Next x
-_______________________________________________________________
-
+    
 End Sub
-
+_______________________________________________________________
 
 Public Sub FormatasLong()
 
