@@ -1,0 +1,30 @@
+
+Public Sub DatesinThisMonth()
+
+    Dim x As Integer
+    Dim MonthValue As Integer
+    Dim YearValue As Integer
+
+    MonthValue = Range("B5").Value
+    YearValue = Range("C5").Value
+
+    For x = 1 To 30
+        Range("D" & 4 + x).Value = _
+            DateSerial(YearValue, MonthValue, x)
+    Next x
+_______________________________________________________________
+
+End Sub
+
+
+Public Sub FormatasLong()
+
+    Dim x As Integer
+    Dim DateValue As Date
+
+    For x = 1 To 30
+        DateValue = Range("D" & 4 + x).Value
+        Range("D" & 4 + x) = Format(DateValue, "Long Date")
+    Next x
+
+End Sub
