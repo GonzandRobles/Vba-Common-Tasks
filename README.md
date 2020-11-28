@@ -12,6 +12,7 @@ Common Tasks in VBA
 - Highlight_Values.txt = Highlight the cells that are above certain range.
 - Populate_Dates.txt = For loop that generates dates depending on cells that contain the month and the year already.
 - Random_Numbers_Generator.txt = Generates randon numbers from 100k to 400k in the selected cells.
+- Rename_Sheets_ByMonth.txt = Renames the sheets according to the month and paste the template of sheet one in every new sheet.
 - Remove_Color.txt = Clear Color of all highlighted cells.
 - Sort_By_InputBox.txt = Uses user input boxes to filter data by selecting options 1 or 2. Uses Select Case statements
 - Worksheets_Count_Offset_Copy.txt = Contains a workbook that goes through different worksheets and copy the values of each worksheet and paste it in another one.
