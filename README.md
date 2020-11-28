@@ -3,7 +3,7 @@ Common Tasks in VBA
 
 - Address_Call_End.txt = Address returns a String value that represents the range reference in the language of the macro.
 - Advanced_Move_Copy_Print.txt = Full report with input box to display data per Quarter sales. **
-- Basic_Input_MessageBox.txt = Basic Message box that takes input and returns answer to the input
+- Basic_Input_MessageBox.txt = Basic Message box that takes input and returns answer to the input.
 - Do_Loops.txt = Examples of Do loops (using Until too).
 - Find_Macros_Create_Report.txt = Same as Generate_Report.txt but with a Do Loop using the Find method.
 - Font_Selected_Cells.txt = Changes the font of the selected cells.
@@ -15,5 +15,6 @@ Common Tasks in VBA
 - Random_Numbers_Generator.txt = Generates randon numbers from 100k to 400k in the selected cells.
 - Rename_Sheets_ByMonth.txt = Renames the sheets according to the month and paste the template of sheet one in every new sheet.
 - Remove_Color.txt = Clear Color of all highlighted cells.
-- Sort_By_InputBox.txt = Uses user input boxes to filter data by selecting options 1 or 2. Uses Select Case statements
+- Sort_By_InputBox.txt = Uses user input boxes to filter data by selecting options 1 or 2. Uses Select Case statements.
+- UDF.txt = User Defined Functions, examples of how to create your own functions.
 - Worksheets_Count_Offset_Copy.txt = Contains a workbook that goes through different worksheets and copy the values of each worksheet and paste it in another one.
