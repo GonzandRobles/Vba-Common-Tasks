@@ -1,0 +1,13 @@
+Sub RenameSheets()
+
+    Dim x As Integer
+
+    For x = 1 To 12
+        Worksheets(1).Copy After:=Worksheets(x)
+        'The only value we really care in the DateSerial is x, 2020 and 1can be whatever
+        Worksheets(x + 1).Name = Format(DateSerial(2020, x, 1), "mmmm")
+    Next x
+
+    Worksheets(1).Delete
+
+End Sub
