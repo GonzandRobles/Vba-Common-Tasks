@@ -1,0 +1,33 @@
+Function CostForGas(MilesofStretch As Double, _
+    MilesPerGallon As Double, LocalGallonCost As Double)
+
+    CostForGas = MilesofStretch / MilesPerGallon * LocalGallonCost
+
+End Function
+____________________________________________________________________________________
+
+Function PercentChangeOvertime(Current As Double, Previous As Double)
+
+    PercentChangeOvertime = (Current - Previous) / Previous
+
+End Function
+____________________________________________________________________________________
+
+Public Function HouseSurfaceArea(HeightHouse As Double, _
+    WidthHouse As Double, DepthHouse As Double, HeightRoof As Double)
+
+    Dim Sides As Double
+    Dim FrontandBack As Double
+    Dim Roof As Double
+    Dim RoofSlant As Double
+
+    Sides = HeightHouse * DepthHouse * 2
+    FrontandBack = ((HeightHouse * WidthHouse) + (HeightRoof * WidthHouse / 2)) * 2
+    RoofSlant = Sqr(HeightRoof * HeightRoof + WidthHouse / 2 * WidthHouse / 2)
+    ' This is using the formula to calculate the length of a right triangle's slant.... A2 + B2 = C2
+
+    Roof = RoofSlant * DepthHouse * 2
+
+    HouseSurfaceArea = FrontandBack + Sides + Roof
+
+End Function
